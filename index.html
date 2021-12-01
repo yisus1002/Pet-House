@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetHouse</title>
+    
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/estilo_h_f.css">
+    <link rel="stylesheet" href="css/estilo_inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fceebe8950.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+
+        <div class="contenedor-header">
+          
+            <nav class="nav-navegacion">
+                <div class="logo">
+                    <a href="index.html"><img src="img/icon/logo.svg" alt="logo"></a>
+                </div>
+                <ul class="menu-nav">
+                    <li><a href="index.html">Inicio</a> </li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="preguntas.html">Preguntas</a></li>
+                </ul>
+                <button class="ham" type="button">   
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span>
+                </button>  
+            </nav>
+
+            <div class="dato-flex">
+                <button onclick="getLocation()" title="Activar ubicación"><i class="fas fa-map-marker-alt"></i> </button>
+                <a href="#" title="Iniciar sesión"><i class="fas fa-user-circle"></i>  </a>
+            
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="section1"> 
+            <h2><span>PetHouse</span> para que <span>comprar</span> <br> si hay <span>tantos</span> 
+                que <span>necesitan</span> un <span>hogar...</span> </h2>
+            <form action="login.php" method="post">
+                <fieldset>
+                   
+                    <legend>Registrarse</legend>
+                    <div>
+                        <label for="text">Nombre completo <span>*</span></label>
+                        <input type="text" name="text" placeholder="Escribe tu nombre" id="text" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electronico <span>*</span></label>
+                        <input type="email" name="email" placeholder="Escribe tu correo" id="email" required>
+                    </div>
+
+                    <div>
+                        <label for="tel">Numero de telefono<span>*</span></label>
+                        <input type="tel" name="tel" placeholder="Escribe tu numero" id="tel" required>
+                    </div>
+
+                    <div class="continuar">
+                        <p>Al dar clic en "<span>continuar</span>", aceptas <br>
+                            nuestros terminos y condiciones</p>
+                        <input type="submit" value="Continuar">
+                    </div>
+                </fieldset>
+                
+            </form>
+            
+        </section>
+
+        <section class="section2">
+            <h2>Adopta una mascota</h2>
+
+
+            <div class="cont-max">
+                <div class="slider">
+                    <ul>
+                        <li><a href="#"> <img src="img/adopta1.jpg" alt=""> </a></li>
+                        <li><a href="#"><img src="img/adopta2.jpg" alt=""> </a></li>
+                        <li><a href="#"><img src="img/adopta3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="img/adopta4.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section3">
+            <h2>Cuida tu mascota</h2>
+            <div>
+                <iframe width="850" height="480" src="https://www.youtube.com/embed/9dDemBxxulo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="section2">
+            <h2>Recomendaciones</h2>
+            <div class="contenedor_img">
+                <div >
+                  <a href="#">  <img src="img/Recomendacion1.jpg" alt="recomendacion1">
+                  </a>
+                </div>
+                <div >
+                   <a href="#"> <img src="img/Recomendacion2.jpg" alt="recomendacion2">   </a> 
+                </div>
+            </div>
+        </section>
+
+        <section class="section5">
+            <h2>Aqui estaran los patrocinadores</h2>
+            <div class="contenedor">
+                <div>
+                   <a href="#"> <img src="img/patrocinador1.jpg" alt="patrocinador1"></a>
+                </div>
+                <div>
+                   <a href="#"> <img src="img/patrocinador2.png" alt="patrocinador2"></a>
+                </div>
+                <div>
+                   <a href=""> <img src="img/patrocinador3.jpg" alt="patrocinador3"></a>
+                </div>
+               
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="redes">
+            <h2>PetHouse</h2>
+            <div class="social">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.youtube.com/"  target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://co.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div> 
+        </section>
+        <div class="contenedor">
+            <section class="porque">
+                <h2>¿Por qué PetHouse?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias impedit assumenda. Quas labore et aspernatur consequatur vel optio ad veritatis earum, repudiandae quaerat commodi architecto quos, laudantium perspiciatis rem?</p>
+            </section>
+                <ul class="menu">
+                    <li><br></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="preguntas.html">Preguntas</a></li>
+                </ul>
+           
+            <section class="contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><a href="tel:+573042740404" class="tel">+57 3042740404</a></li>
+                    <li><a href="tel:+573052846691" class="tel">+57 3052846691</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="info-ubicacion-derechos">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit consequatur veritaudantium atque! <br>
+                &copy;derechos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

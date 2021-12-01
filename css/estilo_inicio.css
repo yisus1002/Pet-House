@@ -1,0 +1,326 @@
+main section{
+    display: inline-block;
+    align-items: center;
+}
+
+
+main h2{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+}
+
+main .section1{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/perros_gatos.jpg );
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 0;
+    
+}
+main .section1 h2{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.063);
+    width: 50%;
+    font-style: italic;
+    box-shadow: 1px 3px 4px   rgba(3, 3, 3, 0.083);
+}
+main .section1 h2 span{
+    color: rgb(69, 232, 69);
+    font-size: 33px;
+}
+main .section1 form{
+    box-shadow: 1px 3px 4px   rgba(3, 3, 3, 0.179);
+    border-radius: 18px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+}
+.section1 fieldset{
+    border: none;
+}
+.section1 legend {
+    text-align: center;
+    color: rgb(43, 218, 43);
+    font-size: 20px;
+    font-weight: 300;
+}
+.section1 form div{
+    align-items: center;
+    display: flex;
+    margin: 25px 0;
+    justify-content: space-between;
+}
+.section1 .continuar{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.section1 .continuar p{
+    text-align: center;
+    margin: 0 0 6px 0;
+    font-size: 12px;
+    font-weight: 200;
+}
+.section1 .continuar span{
+    color: blue;
+    font-weight: 600;
+}
+.section1 label span{
+    color: blue;
+}
+.section1 label{
+    font-size: 13px;
+    width: 40%;
+}
+.section1 input{
+    border-radius: 18px;
+    box-shadow: 0 3px 4px rgba(3, 3, 3, 0.179);
+    border: none;
+}
+
+.section1 input[type="submit"]{
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(44, 33, 33, 0.159);
+    color: #fff;
+    box-shadow: none;
+}
+.section1 input[type="text"], .section1 input[type="email"], .section1 input[type="tel"]{
+   padding: 10px;
+   width: 80%;
+   outline: 0;
+
+}
+.section1 input:hover{
+    box-shadow: 0 3px 18px rgba(3, 3, 3, 0.179);
+    transition: all ease .5s;
+}
+
+.section1 input[type="submit"]:hover{
+    background-color: rgb(43, 218, 43);
+    transition: all ease .5s;
+}
+/*___________________________section2____________________________________________________*/
+
+main .section2{
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+main .section2 h2 , .section3 h2, .section5 h2    {
+    padding: 20px 0 ;
+    color:  rgb(35, 87, 35);
+    font-style: italic;
+}
+.section2 .contenedor_img{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: auto;
+    padding: 0 20px;
+
+}
+.section2 .contenedor_img div{
+    overflow: hidden;
+    background-color: antiquewhite;
+    height: 400px;
+    justify-content: space-between;
+    box-shadow: 2px 3px 4px 3px  rgba(3, 3, 3, 0.801);
+    width: 49%;
+
+}
+.section2 .contenedor_img a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenedor_img img:hover{
+   transform: scale(1.3);
+   transition: all ease .5s;
+}
+
+/*_________________section3_____________________________*/
+
+
+
+
+/*_________________________Contenedor-max________________________________*/
+.cont-max{
+    border-radius: 20px;
+    margin: auto;
+    width: 98%;
+    overflow: hidden;
+    box-shadow: 2px 3px 4px 3px  rgba(184, 179, 179, 0.371);
+
+}
+
+.slider{
+    width: 50%;
+    margin: auto;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    justify-content: space-between;
+    animation: cambio 15s infinite alternate linear;
+}
+
+.slider li{
+    list-style: none;
+    border-radius: 3%;
+    box-shadow: 2px 3px 4px 3px  rgba(3, 3, 3, 0.801);
+    width: 100%;
+    margin:0 10px;
+    overflow: hidden;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.slider img{
+ 
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
+
+.slider img:hover{
+    transform: scale(1.3);
+    transition: all ease .5s;
+ }
+
+/*______________________________________________*/
+main .section3{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    height: 600px;
+}
+main .section3 div{
+    box-shadow: 2px 3px 4px 3px  rgba(3, 3, 3, 0.801);
+   
+    height: 100%;
+    width: 90%;
+}
+main .section3 iframe{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/*___________________________section5____________________________________________________*/
+main .section5{
+    background-color: rgba(9, 9, 9, 0.145);
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+main .section5 .contenedor{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+
+}
+
+.section5 .contenedor div{
+    height: 60px;
+    justify-content: space-between;
+    box-shadow: 2px 3px 4px 2px  rgba(5, 252, 227, 0.282);
+    width: 25%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.section5 .contenedor img{
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+/*___________________________________________________*/
+@media screen and (max-width: 780px){
+    main .section1{
+        flex-direction: column;
+    }
+    main .section1 form{
+       margin: auto 10px;
+    }
+  
+    main .section1 h2{
+        font-size: 20px;
+        padding: 0;
+        margin: 35px auto;
+        width: 90%;
+        text-align: center;
+    }
+    main .section1 h2 span{
+        font-size: 20px;
+    }
+
+/*---------------------------------------------------*/
+
+main .section2{
+    height: 400px;
+}
+
+.section2 .contenedor_img div{
+    height: 300px;
+}
+/*___________________________________________*/
+.slider li{
+    height: 200px;
+}
+
+
+}
+
+/*---------------------------------------------------*/
+
+@media screen and (max-width: 690px){
+    main .section2{
+        height: 300px;
+    }
+    
+    .section2 .contenedor_img div{
+        height: 200px;
+    }
+    main .section3{
+        height: 400px;
+    }
+
+/*___________________________section5____________________________________________________*/
+main .section5{
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+main .section5 .contenedor{
+   width: 300px;
+}
+    
+}
+

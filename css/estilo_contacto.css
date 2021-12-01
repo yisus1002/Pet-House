@@ -1,0 +1,165 @@
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactanos1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/perro2.jpg);
+    background-size: cover;
+    padding: 40px 0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    
+}
+main  .contenedor{
+    background-color: rgba(255, 255, 255, 0.438);
+    box-shadow: 1px 3px 50px   rgba(255, 255, 255, 0.459);
+    border-radius: 20px;
+    padding: 12px;
+    width: 400px;
+    margin: 0 10% 40px 0;
+    
+
+}
+.cont2{
+    height: 100%;
+    width: auto;   
+}
+
+.Imagen{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.Imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenedor p{
+    text-align: justify;
+    font-size: 14px;
+}
+/*--------------------------------------------------------*/
+
+main .section1{
+    background-size: cover;
+    padding: 20px 0;
+    background-color: rgba(97, 60, 134, 0.349);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+
+}
+main .section1 h2{
+    color: rgb(148, 247, 206);
+    padding-left: 20px;
+}
+
+main .section1 form{
+    box-shadow: 1px 3px 4px   rgba(3, 3, 3, 0.179);
+    border-radius: 18px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+}
+.section1 fieldset{
+    border: none;
+}
+.section1 legend {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+   color: rgb(43, 218, 43);
+}
+.section1 form div{
+    align-items: center;
+    display: flex;
+    margin: 25px 0;
+    justify-content: space-between;
+}
+
+.section1 .continuar{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.section1 .continuar p{
+    text-align: center;
+    margin: 0 0 6px 0;
+    font-size: 12px;
+    font-weight: 200;
+}
+.section1 .continuar span{
+    color: blue;
+    font-weight: 600;
+}
+.section1 label span{
+    color: blue;
+}
+.section1 label{
+    font-size: 13px;
+    width: 40%;
+}
+.section1 input, .section1 div .opciones{
+    border-radius: 18px;
+    box-shadow: 0 3px 4px rgba(3, 3, 3, 0.179);
+    border: none;
+}
+
+.section1 input[type="submit"]{
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(44, 33, 33, 0.159);
+    color: #fff;
+    box-shadow: none;
+}
+.section1 input[type="text"], .section1 input[type="email"], .section1 input[type="tel"], .section1 div .opciones{
+   padding: 10px;
+   width: 80%;
+   outline: 0;
+
+}
+.section1 form .opciones{
+    margin: auto;
+    width: 100%;
+}
+.section1 input:hover, .section1 div .opciones:hover,.section1 div textarea:hover{
+    box-shadow: 0 3px 18px rgba(3, 3, 3, 0.179);
+    transition: all ease .5s;
+}
+
+
+.section1 input[type="submit"]:hover{
+    background-color: rgb(43, 218, 43);
+    transition: all ease .5s;
+}
+.section1 div textarea{
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 3px 4px rgba(3, 3, 3, 0.179);
+    resize: none;
+    outline: none;
+}
+
+@media screen and (max-width: 780px) {
+    main .contenedor{
+        margin: auto;
+        left: 0;
+        width: 70%;
+    }
+    main .section1{
+
+        padding: 10px;
+
+    }
+}

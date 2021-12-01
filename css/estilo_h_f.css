@@ -1,0 +1,336 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: 0px .1px 10px  rgba(3, 3, 3, 0.87);
+
+}
+
+body{
+    background-image: linear-gradient(-45deg, rgba(127, 255, 212, 0.267) 1%, #e3ddd9 10%, #36221cb9 80%   );
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+header .contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo{
+    display:flex;
+
+}
+
+header .logo img{
+    margin: auto;
+    height: 80px;
+}
+ header .nav-navegacion{
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+} 
+
+
+.ham{
+    display:none;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding: 0 10px 0 0;
+    }
+    
+.ham span{
+        background-color: #485e4c;
+        display:block;
+        height:3px;
+        width: 28px;
+        margin:10px auto;
+        border-radius:2px;  
+}
+
+header .menu-nav a{
+    text-decoration: none;
+    color: rgb(64, 135, 14);
+    font-size: 18px;
+    font-weight: 540;
+    margin-left: 4px;
+    padding: 0 9px;
+}
+
+header .menu-nav li{
+    list-style: none;
+}
+
+.menu-nav{
+    display:flex;
+    padding:0;
+    margin: auto 0;
+}
+header .dato-flex{
+    width: 80px;
+    display: flex;
+    padding: 0 20px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .dato-flex a{
+    color: rgba(148, 66, 66, 0.659);
+    border-radius: 50%;
+
+}
+header .dato-flex button{
+    border-radius: 50%;
+    margin: 0;
+    border: none;
+    color: green;
+    cursor: pointer;
+}
+
+#check1{
+    display: none;
+}
+.bar-btn{
+    font-size: 0;
+    visibility: hidden;
+}
+
+header .menu-nav a:hover{
+    color:rgb(43, 218, 43);
+    text-decoration: underline;
+   transition: all .4s ease-in-out;
+
+}
+.dato-flex button:hover , .dato-flex a:hover {
+    box-shadow: 0px 1px 10px  rgba(3, 3, 3, 0.87);
+    transition: all 500ms ease;
+}
+
+/*_______________________________________________________*/
+
+
+
+footer{
+    text-align: center;
+    display: block;
+    background-color: rgba(43, 39, 39, 0.624);
+    padding: 0 40px;
+    margin: auto 0;
+
+}
+footer h2{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+
+}
+footer .redes{
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 3px rgb(77, 71, 71);
+}
+footer .social{
+
+    align-items: center;
+    display: flex;
+}
+footer .social a{
+    background-color: rgba(255, 255, 255, 0.172);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 3px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+footer a i{
+    font-size: 23px;
+    margin: 4px;
+    padding: 0;
+}
+
+footer .social a:hover{
+    box-shadow: 0px 1px 10px  rgba(255, 255, 255, 0.87);
+    transition: all 500ms ease;
+    color: rgb(255, 255, 255);
+}
+
+footer .contenedor{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+footer .porque{
+    display: block;
+    width: 400px;
+}
+footer .porque p{
+    text-align: justify;
+}
+footer ul{
+    list-style: none;
+    padding: 0 2px;
+    margin: 0;
+}
+footer ul li{
+    line-height: 25px;
+}
+
+footer .contenedor section{
+    text-align: center;
+    padding: 0 4px;
+  
+}
+
+footer .info-ubicacion-derechos p{
+    padding-bottom: 6px;
+    margin: 0;
+    text-align: center;
+}
+
+footer  a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 780px) {
+    .bar-btn{
+        font-size: 30px;
+        visibility: visible;
+    }
+    header .contenedor-header{
+        display: block;
+    }
+    header .logo{
+     padding-left: 10px;
+     margin: auto 0;
+    }
+ 
+/*____________________________________________*/
+
+.ham{
+    display:block;
+    cursor:pointer;
+    position: absolute; 
+    top:auto;
+    right:20px;
+    transition: 0.2s  0.1s; 
+}
+header nav{
+    flex-direction:column;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.menu-nav{
+       
+    flex-direction:column;
+    justify-content: space-around;
+    border-top: solid 2px  rgba(119, 116, 116, 0.604);
+    margin:0;
+    padding-top: 10px;
+    display:none;
+    opacity:0;
+    transition: opacity 5s ease-out;
+    width:100%;
+   line-height: 30px;
+}
+.menu-nav a:hover{
+    text-decoration: underline;
+}
+
+
+    header .dato-flex{
+        padding-right: 10px;
+        position: absolute;
+        background-color: rgb(202, 226, 248);
+        border-radius: 0 0 0 30px;
+        right: 0;
+        top: auto;
+    }
+    header .logo img{
+        height: 60px;
+    }
+
+    footer{
+        padding: 0 10px;
+    }
+    footer .info-ubicacion-derechos p{
+        padding-bottom: 3px;
+        font-size: 13px;
+        margin: 3px 0 0 ;
+    }
+
+ /*Funciones_________________________________________________*/
+
+ @keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .menu-nav.activado{
+      display:flex; 
+      animation: muestraMenu 350ms ease-in-out both;
+  }
+
+  .br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  
+  .br-2.animado{
+    opacity: 0;
+  }
+  .br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+  }
+
+ .ham.girar:hover{
+     transform:rotate(360deg);
+ }
+
+
+
+}
+@media screen and (max-width: 690px) {
+    header .logo img{
+        height: 40px;
+    }
+    footer .contenedor{
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width: 300px){
+    body{
+        min-width: 300px;
+    }
+   footer .redes{
+       display: block;
+     
+   }
+   footer .redes, footer .redes .social{
+       text-align: center;
+       justify-content: space-between;
+   }
+}
+

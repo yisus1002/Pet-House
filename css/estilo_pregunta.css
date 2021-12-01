@@ -1,0 +1,115 @@
+main #Busqueda {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(228, 215, 215, 0.3), rgba(192, 180, 180, 0.3)),
+      url(../img/perro-gastroenteritis2.jpg);
+    background-size: cover;
+  }
+  main section {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  main h2 {
+    text-align: center;
+    margin-top: 70px;
+    color:  rgb(4, 56, 4);
+    font-style: italic;
+  }
+  .buscar {
+    margin: 0 auto;
+    display: flex;
+  }
+  .buscar form {
+    margin: auto;
+    display: flex;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 80px;
+    align-items: center;
+    border-radius: 40px;
+  }
+  
+
+  
+  .buscar_texto {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    line-height: 60px;
+    transition: 0.3s;
+    width: 0;
+  }
+  .buscar_texto::placeholder {
+    color: #fff;
+  }
+  
+  .boton {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    vertical-align: middle;
+  
+    color: white;
+    font-size: 30px;
+  }
+  
+  
+  .Categoria {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+  }
+  
+  .Categoria div {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: rgb(0, 0,0,0.3);
+    
+  }
+  
+  .Categoria div:hover{
+      box-shadow: 0px 1px 20px  rgba(3, 3, 3, 0.87);
+      transition: all 500ms ease;
+      color: #fff;
+  }
+  
+  .Categoria div h3 {
+    
+    margin: 0 auto;
+  }
+  .icono_pregunta{
+    font-size: 50px;
+  }
+  .categoria {
+    padding-bottom: 40px;
+  }
+  
+  /* ===================== Responsive ===============*/
+  
+  @media screen and (min-width: 320px) {
+    .buscar form:hover > .buscar_texto {
+      width: 190px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .Categoria {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
