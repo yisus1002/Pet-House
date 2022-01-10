@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/S_L.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/fceebe8950.js" crossorigin="anonymous"></script>
+    <title>PetHouse</title>
+  </head>
+  <body>
+      <header>
+<!-- Image and text -->
+        <nav class="navbar navbar-light bg-light shadow">
+            <a class="navbar-brand  fs-2 fst-italic" href="index.html">
+            <img src="https://i.ibb.co/1LjY2dP/logo.png" width="140" height="52" class="d-inline-block align-middle ms-3" alt="logo pethouse">
+                PetHouse
+            </a>
+        </nav>
+      </header>
+      <main id="main" >
+          <div class="container-lg text-success text-center mt-4">
+            <hr class=" my-1 container bg-success col-10">
+            <h1>Bienvenido a <span class="fst-italic fs-1">PetHouse</span></h1>
+              <hr class=" my-1 container bg-success col-10">
+            
+              <div class=" container-fluid mt-3">
+                <button  type="button"  id="btnCargarCliente" class="btn btn-success btn-lg text-uppercase m-1" > Ver Clientes</button>
+                 <button type="button"  id="btnCargarProducto" class="btn btn-success btn-lg text-uppercase m-1">ver producto</button>
+                 <button type="button"  id="BtnCargarMascotas" class="btn btn-success btn-lg text-uppercase m-1">ver Mascotas</button>
+                 <button type="button"  id="BtnCargarProveedor" class="btn btn-success btn-lg text-uppercase m-1">ver proveedor</button>
+                 <!-- <button type="button"  id="btn2" class="btn btn-success btn-lg text-uppercase m-1">Btn4</button> -->
+             </div>
+             
+             <div class="container-fluid col-12 mb-2  p-3 mt-3 shadow d-none" id="pr">
+               <div class="section text-sm-start p-1 p-sm-3">
+                 <div class="row">
+                   <div class="col">
+                     <div id="app" class="row"></div>
+
+                   </div>
+                 </div>
+               </div>
+             </div>
+            </div>
+
+      </main>
+
+      <footer class="container-fluid mt-5">
+        <section class="redes cont justify-content-between">
+            <h2>PetHouse</h2>
+            <div class="social ">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.youtube.com/"  target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://co.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div> 
+        </section>
+        <div class="container-fluid py-4 d-flex flex-wrap">
+            <section class="porque container-fluid">
+                <h2 class="text-center">¿Por qué PetHouse?</h2>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, earum! Id, laboriosam quis deserunt officia consequatur nemo atque tempore! Porro praesentium quas ex culpa assumenda eaque nisi ipsum corporis soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias impedit assumenda. Quas labore et aspernatur consequatur vel optio ad veritatis earum, repudiandae quaerat commodi architecto quos, laudantium perspiciatis rem?</p>
+            </section>
+                <ul class="menu container col-6 text-center">
+                    <li><br></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="preguntas.html">Preguntas</a></li>
+                </ul>
+           
+            <section class="contacto container col-6 text-center ">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><a href="tel:+573042740404" class="tel">+57 3042740404</a></li>
+                    <li><a href="tel:+573052846691" class="tel">+57 3052846691</a></li>
+                </ul>
+            </section>
+        </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2022 desarrollo web I unicordoba
+      </div>
+    </footer>
+      <script src="js/app.js"></script>
+      <script src="js/funcionalidades.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

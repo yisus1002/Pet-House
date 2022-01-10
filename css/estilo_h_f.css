@@ -320,17 +320,10 @@ header nav{
     }
 
 }
-@media screen and (max-width: 300px){
+@media screen and (max-width: 360px){
     body{
-        min-width: 300px;
+        min-width: 360px;
     }
-   footer .redes{
-       display: block;
-     
-   }
-   footer .redes, footer .redes .social{
-       text-align: center;
-       justify-content: space-between;
-   }
+
 }
 
